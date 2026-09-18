@@ -6,9 +6,8 @@
 
     home = {
         packages = with pkgs; [
-            hello
-
             # essentials
+            home-manager
             git
             ripgrep
 
@@ -26,8 +25,7 @@
     username = "doaads";
     homeDirectory = "/home/doaads";
 
-    # You do not need to change this if you're reading this in the future.
-    # Don't ever change this after the first build.  Don't ask questions.
+    # Do not change
     stateVersion = "26.05";
     };
 }
