@@ -22,11 +22,14 @@
             networkmanagerapplet
         ];
 
-    username = "doaads";
-    homeDirectory = "/home/doaads";
+        username = "doaads";
+        homeDirectory = "/home/doaads";
 
-    # Do not change
-    stateVersion = "26.05";
+        # Do not change
+        stateVersion = "26.05";
     };
+
+    nixpkgs.config.allowUnfree = true;
+
 }
 
