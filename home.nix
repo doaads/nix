@@ -33,6 +33,30 @@
         ];
     };
 
+    programs.kitty = lib.mkForce {
+        enable = true;
+        settings = {
+            confirm_os_window_close = 0;
+            dynamic_background_opacity = true;
+            enable_audio_bell = false;
+            mouse_hide_wait = "-1.0";
+            window_padding_width = 1;
+            font_family = "FiraCode Nerd Font";
+            bold_font = "auto";
+            italic_font = "auto";
+            bold_italic_font = "auto";
+        };
+        autoThemeFiles = {
+            dark = "everforest_dark_medium";
+            light = "everforest_dark_medium";
+            noPreference = "everforest_dark_medium";
+        };
+    };
+
+    programs.waybar.enable = true;
+    xdg.configFile."waybar/config.jsonc".source = ./configs/waybar/config.jsonc;
+    xdg.configFile."waybar/style.css".source = ./configs/waybar/style.css;
+
     # niri config
     xdg.configFile."niri/config.kdl".source = ./configs/niri/config.kdl;
 
@@ -42,6 +66,7 @@
             home-manager
             git
             ripgrep
+            kitty
 
             # WM
             waybar

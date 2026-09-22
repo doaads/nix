@@ -1,0 +1,169 @@
+* {
+  font-size: 14px;
+  font-family: "FiraCode Nerd Font";
+  font-style: italic;     /* makes the text cursive/italic */
+}
+
+window#waybar {
+    /*background: rgba(0,0,0,0.0);*/
+    background: #333C43;
+    color: #D3C6AA;
+}
+
+#tray {
+  color: #D3C6AA;
+  margin: 3px 0px 3px 0px;
+  padding: 5px 0px 5px 0px; 
+  /*
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  */
+}
+
+#workspaces {
+  margin: 0px 0px 0px 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#workspaces button {
+  background: transparent;   /* removes the box */
+  color: #71856e;
+  padding: 0px 5px;     /* same padding, no jumps */
+}
+
+#workspaces button.active {
+  background: transparent;   /* removes the box */
+  color: #D3C6AA;
+  font-weight: bold;         /* makes the text bold */
+  margin: 0px 0px 0px 0px;
+  padding: 0px 5px;     /* same padding, no jumps */
+}
+
+
+window#waybar.empty #window {
+	background-color: transparent;
+}
+
+window#waybar {
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+#group-power {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  color: #D3C6AA;
+}
+
+#custom-quit {
+  padding: 0px 5px 0px 5px;
+}
+
+#custom-quit:hover {
+  color: #71856e;
+}
+
+#custom-reboot {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 5px 0px 8px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#custom-reboot:hover {
+  color: #71856e;
+}
+
+#custom-shutdown {
+  padding: 0px 5px 0px 5px;
+}
+
+#custom-shutdown:hover {
+  color: #71856e;
+}
+
+#custom-suspend {
+  margin: 0px 5px 0px 0px;
+  padding: 0px 5px 0px 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#custom-suspend:hover {
+  color: #71856e;
+}
+
+.drawer {
+  color: #D3C6AA;
+}
+
+#clock {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 5px 0px 5px;
+  color: #FFF;
+  /*border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;*/
+  color: #D3C6AA;
+}
+
+#pulseaudio {
+  margin: 0px 0px 0px 0px;
+  padding: 5px 8px 5px 5px;
+  /*border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;*/
+  color: #D3C6AA;
+}
+
+#network {
+  color: #D3C6AA;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 5px 0px 8px; 
+  /*border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;*/
+}
+
+#upower {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 5px 0px 5px;
+  color: #D3C6AA;
+}
+
+#cpu {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 5px 0px 5px;
+  color: #D3C6AA;
+}
+
+#power-profiles-daemon {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 5px 0px 5px;
+  color: #D3C6AA;
+}
+
+#custom-news {
+  color: #D3C6AA;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 5px 5px 8px; 
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+menu {
+  background: #1d1f21;
+  color: #D3C6AA;
+}
+
+#clock,
+#cpu,
+#network,
+#upower,
+#power-profiles-daemon,
+#pulseaudio,
+#group-power {
+  background: transparent;
+}
