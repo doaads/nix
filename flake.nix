@@ -22,5 +22,14 @@
           modules = [ ./home.nix ];
         };
       };
+
+      devShells = {
+        ${system}.pentest = pkgs.mkShell {
+          packages = with pkgs; [
+            nmap
+            sqlmap
+          ];
+        };
+      };
     };
 }

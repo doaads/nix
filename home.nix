@@ -54,11 +54,24 @@
     };
 
     programs.waybar.enable = true;
-    xdg.configFile."waybar/config.jsonc".source = ./configs/waybar/config.jsonc;
-    xdg.configFile."waybar/style.css".source = ./configs/waybar/style.css;
 
-    # niri config
-    xdg.configFile."niri/config.kdl".source = ./configs/niri/config.kdl;
+    # extra configs
+    xdg.configFile = {
+        "waybar/config.jsonc".source         = ./configs/waybar/config.jsonc;
+        "waybar/style.css".source            = ./configs/waybar/style.css;
+        "waybar/homelab_vpn_menu.xml".source = ./configs/waybar/homelab_vpn_menu.xml;
+        "waybar/network_menu.xml".source     = ./configs/waybar/network_menu.xml;
+        "niri/config.kdl".source             = ./configs/niri/config.kdl;
+    };
+
+    programs.swaylock.enable = true;
+
+    programs.direnv.enable = true;
+
+    services.emacs = {
+        enable = true;
+        defaultEditor = false;
+    };
 
     home = {
         packages = with pkgs; [
@@ -67,6 +80,7 @@
             git
             ripgrep
             kitty
+            emacs
 
             # WM
             waybar
@@ -77,6 +91,9 @@
             pavucontrol
             brightnessctl
             networkmanagerapplet
+
+            # desktop apps
+            chromium
         ];
 
         sessionVariables = {
@@ -98,6 +115,5 @@
     };
 
     nixpkgs.config.allowUnfree = true;
-
 }
 

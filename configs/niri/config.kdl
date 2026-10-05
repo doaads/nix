@@ -269,7 +269,7 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "systemctl" "--user" "start" "waybar"
-spawn-at-startup "swaybg" "-i" "/home/doaads/Pictures/wallpaper.jpg" "-m" "fill"
+spawn-at-startup "swaybg" "-i" "/home/doaads/Pictures/wallpaper2.jpg" "-m" "fill"
 spawn-at-startup "nm-applet" "--indicator"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
